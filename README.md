@@ -8,7 +8,7 @@ A dedicated log of my daily technical problem-solving. This repository tracks my
 | 01 | **Palindrome Middle** | String Slicing `[::-1]`, Integer Division `//`, Parity Logic | [View Code](./Python/01_palindrome_middle.py) |
 | 02 | **FizzBuzz Validator** | `enumerate()`, Type Check, Modulo Math | [View Code](./Python/02_fizzbuzz_validator.py) |
 | 03 | **Bingo Sequencer** | Dictionary Mapping, String Formatting | [View Code](./Python/03_bingo_sequencer.py) |
----
+| 04 | **Spiral Matrix** | 2D Arrays, Boundary Management| [View Code](./Python/04_spiral_matrix.py) |
 
 #### [01] Palindrome Middle
 **Problem:** Find the true center of a symmetric string.
@@ -29,3 +29,10 @@ A dedicated log of my daily technical problem-solving. This repository tracks my
 - **Boundary Mapping:** Uses a dictionary to define the upper limit for each letter (B=15, I=30, etc.).
 - **Column Transition:** If a number hits its limit, the `find()` method locates the next letter in "BINGO" to shift columns.
 - **Hard Reset:** Specifically checks for "O75" to wrap the sequence back to the starting "B1".
+
+####[04] Spiral Matrix
+**Problem:** Convert a 2D matrix into a 1D array by traversing it in a clockwise spiral.
+**Logic:**
+- **Layer-by-Layer Shrinking: Sets four boundaries (Top, Bottom, Left, Right) and moves inward after each full side is traversed.
+- **Directional Control: Uses four distinct for loops to handle the Right-Down-Left-Up movement pattern.
+- **Overlap Prevention: Includes conditional checks within the loop to ensure rows or columns aren't processed twice as the boundaries meet in the center.
