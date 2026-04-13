@@ -40,7 +40,11 @@ A dedicated log of my daily technical problem-solving. This repository tracks my
 
 #### [05] Name Initializer
 **Problem**: Convert a full name string into uppercase initials separated by dots.
+
 **Logic**:
+
 -Tokenization: Uses .split() to break the string into individual names regardless of how many spaces are used.
+
 -Formatting: Extracts the character at index 0 for each name and applies .upper() to ensure consistency.
+
 -Reconstruction: Uses a loop and f-strings to append dots, then joins the list back into a single string.
