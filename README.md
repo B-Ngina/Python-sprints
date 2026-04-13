@@ -9,6 +9,7 @@ A dedicated log of my daily technical problem-solving. This repository tracks my
 | 02 | **FizzBuzz Validator** | `enumerate()`, Type Check, Modulo Math | [View Code](./Python/02_fizzbuzz_validator.py) |
 | 03 | **Bingo Sequencer** | Dictionary Mapping, String Formatting | [View Code](./Python/03_bingo_sequencer.py) |
 | 04 | **Spiral Matrix** | 2D Arrays, Boundary Management| [View Code](./Python/04_spiral_matrix.py) |
+| 05 | **Name Initializer** |	String Splitting, List Joining, f-strings | [View Code](./Python/05_name_initializer.py) |
 
 #### [01] Palindrome Middle
 **Problem:** Find the true center of a symmetric string.
@@ -30,9 +31,16 @@ A dedicated log of my daily technical problem-solving. This repository tracks my
 - **Column Transition:** If a number hits its limit, the `find()` method locates the next letter in "BINGO" to shift columns.
 - **Hard Reset:** Specifically checks for "O75" to wrap the sequence back to the starting "B1".
 
-####[04] Spiral Matrix
+#### [04] Spiral Matrix
 **Problem:** Convert a 2D matrix into a 1D array by traversing it in a clockwise spiral.
 **Logic:**
 - **Layer-by-Layer Shrinking: Sets four boundaries (Top, Bottom, Left, Right) and moves inward after each full side is traversed.
 - **Directional Control: Uses four distinct for loops to handle the Right-Down-Left-Up movement pattern.
 - **Overlap Prevention: Includes conditional checks within the loop to ensure rows or columns aren't processed twice as the boundaries meet in the center.
+
+#### [05] Name Initializer
+**Problem**: Convert a full name string into uppercase initials separated by dots.
+**Logic**:
+-Tokenization: Uses .split() to break the string into individual names regardless of how many spaces are used.
+-Formatting: Extracts the character at index 0 for each name and applies .upper() to ensure consistency.
+-Reconstruction: Uses a loop and f-strings to append dots, then joins the list back into a single string.
