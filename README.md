@@ -10,7 +10,7 @@ A dedicated log of my daily technical problem-solving. This repository tracks my
 | 03 | **Bingo Sequencer** | Dictionary Mapping, String Formatting | [View Code](./Python/03_bingo_sequencer.py) |
 | 04 | **Spiral Matrix** | 2D Arrays, Boundary Management| [View Code](./Python/04_spiral_matrix.py) |
 | 05 | **Name Initializer** |	String Splitting, List Joining, f-strings | [View Code](./Python/05_name_initializer.py) |
-| 06 | **Alphabetical Max** |	max(key=str.lower) | [View Code](./Python/06_max.py) |
+| 06 | **Alphabetical Max** |	max(key=str.lower) | [View Code](./Python/06_max_letter.py) |
 
 
 #### [01] Palindrome Middle
