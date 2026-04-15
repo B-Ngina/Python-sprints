@@ -11,7 +11,7 @@ A dedicated log of my daily technical problem-solving. This repository tracks my
 | 04 | **Spiral Matrix** | 2D Arrays, Boundary Management| [View Code](./Python/04_spiral_matrix.py) |
 | 05 | **Name Initializer** |	String Splitting, List Joining, f-strings | [View Code](./Python/05_name_initializer.py) |
 | 06 | **Alphabetical Max** |	max(key=str.lower) | [View Code](./Python/06_max_letter.py) |
-
+| 07 | **Sort and Swap** | .sort() & Modulo | [View Code](./Python/07_sort_swap.py) |
 
 #### [01] Palindrome Middle
 **Problem:** Find the true center of a symmetric string.
@@ -60,3 +60,13 @@ Character Filtering: Uses a list comprehension with .isalpha() to strip out numb
 Case-Insensitive Comparison: Implements max(key=str.lower) to treat "W" and "w" equally during the search.
 
 Originality: Returns the character in its original form (e.g., "W") rather than forcing it to lowercase.
+
+#### [07] Sort and Swap
+**Problem**: Sort an array ascendingly, then swap every element at a multiple-of-3 index with the item preceding it.
+**Logic**:
+
+Pre-sorting: Uses .sort() to establish a baseline order before any index manipulation occurs.
+
+Index Multiples: Employs if i % 3 == 0 to pinpoint target indices while starting the loop at 1 to avoid a "before index 0" error.
+
+Backward-Looking Swap: Uses arr[i], arr[i-1] for the swap. Because we look backward, we can safely iterate through the full len(arr) without skipping the final element.
