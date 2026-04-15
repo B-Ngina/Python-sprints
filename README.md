@@ -15,6 +15,7 @@ A dedicated log of my daily technical problem-solving. This repository tracks my
 
 #### [01] Palindrome Middle
 **Problem:** Find the true center of a symmetric string.
+
 **Logic:**
 - Symmetry Filter: Validates using `s[::-1]` (O(n) time).
 - Parity-Switch: Uses `% 2` to toggle between single-point median and cluster median.
@@ -22,12 +23,14 @@ A dedicated log of my daily technical problem-solving. This repository tracks my
 
 #### [02] FizzBuzz Validator
 **Problem:** Verify if a list follows FizzBuzz rules from any starting point.
+
 **Logic:**
 - Sequence Anchoring: Finds the first integer to calculate the sequence's starting value.
 - Validation: Re-runs the FizzBuzz logic (modulo 3, 5, and 15) to ensure every list item matches the mathematical expectation.
 
 #### [03] Bingo Sequencer
 **Problem:** Find the next sequential Bingo number, handling column transitions and resetting at the end.
+
 **Logic:**
 - Boundary Mapping: Uses a dictionary to define the upper limit for each letter (B=15, I=30, etc.).
 - Column Transition: If a number hits its limit, the `find()` method locates the next letter in "BINGO" to shift columns.
@@ -35,6 +38,7 @@ A dedicated log of my daily technical problem-solving. This repository tracks my
 
 #### [04] Spiral Matrix
 **Problem:** Convert a 2D matrix into a 1D array by traversing it in a clockwise spiral.
+
 **Logic:**
 - Layer-by-Layer Shrinking: Sets four boundaries (Top, Bottom, Left, Right) and moves inward after each full side is traversed.
 - Directional Control: Uses four distinct for loops to handle the Right-Down-Left-Up movement pattern.
@@ -53,6 +57,7 @@ A dedicated log of my daily technical problem-solving. This repository tracks my
 
 #### [06] Alphabetical Max
 **Problem**: Find the letter in a string that appears last in the alphabet while preserving its original casing.
+
 **Logic**:
 
 Character Filtering: Uses a list comprehension with .isalpha() to strip out numbers and symbols.
@@ -63,6 +68,7 @@ Originality: Returns the character in its original form (e.g., "W") rather than 
 
 #### [07] Sort and Swap
 **Problem**: Sort an array ascendingly, then swap every element at a multiple-of-3 index with the item preceding it.
+
 **Logic**:
 
 Pre-sorting: Uses .sort() to establish a baseline order before any index manipulation occurs.
