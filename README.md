@@ -19,7 +19,9 @@ A dedicated log of my daily technical problem-solving. This repository tracks my
 
 **Logic:**
 Symmetry Filter: Validates using `s[::-1]` (O(n) time).
+
 Parity-Switch: Uses `% 2` to toggle between single-point median and cluster median.
+
 Precision: Applied floor division `//` to avoid index floating errors.
 
 #### [02] FizzBuzz Validator
@@ -27,6 +29,7 @@ Precision: Applied floor division `//` to avoid index floating errors.
 
 **Logic:**
 Sequence Anchoring: Finds the first integer to calculate the sequence's starting value.
+
 Validation: Re-runs the FizzBuzz logic (modulo 3, 5, and 15) to ensure every list item matches the mathematical expectation.
 
 #### [03] Bingo Sequencer
@@ -34,7 +37,9 @@ Validation: Re-runs the FizzBuzz logic (modulo 3, 5, and 15) to ensure every lis
 
 **Logic:**
 Boundary Mapping: Uses a dictionary to define the upper limit for each letter (B=15, I=30, etc.).
+
 Column Transition: If a number hits its limit, the `find()` method locates the next letter in "BINGO" to shift columns.
+
 Hard Reset: Specifically checks for "O75" to wrap the sequence back to the starting "B1".
 
 #### [04] Spiral Matrix
@@ -42,7 +47,9 @@ Hard Reset: Specifically checks for "O75" to wrap the sequence back to the start
 
 **Logic:**
 Layer-by-Layer Shrinking: Sets four boundaries (Top, Bottom, Left, Right) and moves inward after each full side is traversed.
+
 Directional Control: Uses four distinct for loops to handle the Right-Down-Left-Up movement pattern.
+
 Overlap Prevention: Includes conditional checks within the loop to ensure rows or columns aren't processed twice as the boundaries meet in the center.
 
 #### [05] Name Initializer
