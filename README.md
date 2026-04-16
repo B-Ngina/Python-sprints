@@ -18,43 +18,43 @@ A dedicated log of my daily technical problem-solving. This repository tracks my
 **Problem:** Find the true center of a symmetric string.
 
 **Logic:**
-- Symmetry Filter: Validates using `s[::-1]` (O(n) time).
-- Parity-Switch: Uses `% 2` to toggle between single-point median and cluster median.
-- Precision: Applied floor division `//` to avoid index floating errors.
+Symmetry Filter: Validates using `s[::-1]` (O(n) time).
+Parity-Switch: Uses `% 2` to toggle between single-point median and cluster median.
+Precision: Applied floor division `//` to avoid index floating errors.
 
 #### [02] FizzBuzz Validator
 **Problem:** Verify if a list follows FizzBuzz rules from any starting point.
 
 **Logic:**
-- Sequence Anchoring: Finds the first integer to calculate the sequence's starting value.
-- Validation: Re-runs the FizzBuzz logic (modulo 3, 5, and 15) to ensure every list item matches the mathematical expectation.
+Sequence Anchoring: Finds the first integer to calculate the sequence's starting value.
+Validation: Re-runs the FizzBuzz logic (modulo 3, 5, and 15) to ensure every list item matches the mathematical expectation.
 
 #### [03] Bingo Sequencer
 **Problem:** Find the next sequential Bingo number, handling column transitions and resetting at the end.
 
 **Logic:**
-- Boundary Mapping: Uses a dictionary to define the upper limit for each letter (B=15, I=30, etc.).
-- Column Transition: If a number hits its limit, the `find()` method locates the next letter in "BINGO" to shift columns.
-- Hard Reset: Specifically checks for "O75" to wrap the sequence back to the starting "B1".
+Boundary Mapping: Uses a dictionary to define the upper limit for each letter (B=15, I=30, etc.).
+Column Transition: If a number hits its limit, the `find()` method locates the next letter in "BINGO" to shift columns.
+Hard Reset: Specifically checks for "O75" to wrap the sequence back to the starting "B1".
 
 #### [04] Spiral Matrix
 **Problem:** Convert a 2D matrix into a 1D array by traversing it in a clockwise spiral.
 
 **Logic:**
-- Layer-by-Layer Shrinking: Sets four boundaries (Top, Bottom, Left, Right) and moves inward after each full side is traversed.
-- Directional Control: Uses four distinct for loops to handle the Right-Down-Left-Up movement pattern.
-- Overlap Prevention: Includes conditional checks within the loop to ensure rows or columns aren't processed twice as the boundaries meet in the center.
+Layer-by-Layer Shrinking: Sets four boundaries (Top, Bottom, Left, Right) and moves inward after each full side is traversed.
+Directional Control: Uses four distinct for loops to handle the Right-Down-Left-Up movement pattern.
+Overlap Prevention: Includes conditional checks within the loop to ensure rows or columns aren't processed twice as the boundaries meet in the center.
 
 #### [05] Name Initializer
 **Problem**: Convert a full name string into uppercase initials separated by dots.
 
 **Logic**:
 
--Tokenization: Uses .split() to break the string into individual names regardless of how many spaces are used.
+Tokenization: Uses .split() to break the string into individual names regardless of how many spaces are used.
 
--Formatting: Extracts the character at index 0 for each name and applies .upper() to ensure consistency.
+Formatting: Extracts the character at index 0 for each name and applies .upper() to ensure consistency.
 
--Reconstruction: Uses a loop and f-strings to append dots, then joins the list back into a single string.
+Reconstruction: Uses a loop and f-strings to append dots, then joins the list back into a single string.
 
 #### [06] Alphabetical Max
 **Problem**: Find the letter in a string that appears last in the alphabet while preserving its original casing.
