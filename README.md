@@ -12,6 +12,7 @@ A dedicated log of my daily technical problem-solving. This repository tracks my
 | 05 | **Name Initializer** |	String Splitting, List Joining, f-strings | [View Code](./Python/05_name_initializer.py) |
 | 06 | **Alphabetical Max** |	max(key=str.lower) | [View Code](./Python/06_max_letter.py) |
 | 07 | **Sort and Swap** | .sort() & Modulo | [View Code](./Python/07_sort_swap.py) |
+| 08 | **String Math Parser** |	Regex \d+/\D+ & Gap-Parity Math |	[View Code](./Python/08_string_math.py) |
 
 #### [01] Palindrome Middle
 **Problem:** Find the true center of a symmetric string.
@@ -76,3 +77,15 @@ Pre-sorting: Uses .sort() to establish a baseline order before any index manipul
 Index Multiples: Employs if i % 3 == 0 to pinpoint target indices while starting the loop at 1 to avoid a "before index 0" error.
 
 Backward-Looking Swap: Uses arr[i], arr[i-1] for the swap. Because we look backward, we can safely iterate through the full len(arr) without skipping the final element.
+
+#### [08] String Math Parser
+**Problem**: Perform math on numbers hidden in a string based on the count of characters between them (Even = Add, Odd = Subtract).
+
+**Logic**:
+
+Regex Extraction: Uses re.findall to split the string into a list of numbers (\d+) and a list of separators (\D+).
+
+Alignment: Employs gaps.pop(0) to remove leading non-digits, ensuring the first operator correctly corresponds to the space between the first and second numbers.
+
+Cumulative Result: Iterates through the lists using a "look-back" index (i-1) to check the gap length while updating a running total.
+
