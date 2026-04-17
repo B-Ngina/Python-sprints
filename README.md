@@ -99,13 +99,14 @@ Cumulative Result: Iterates through the lists using a "look-back" index (i-1) to
 
 #### [09] Vigenère-Style Decoder
 **Problem**: Decode a message using a key derived from historical challenge titles (multiples of 25), applying a backward Caesar shift.
+
 **Logic**:
 
-Key Generation: Filters a list of titles using enumerate(start=1) and modulo % 25. It extracts the first alphabetical character of each qualifying title to form the encryption key.
+Decodes a string using a repeating key and backward alphabetical shifts. 
 
-Modular Arithmetic: Uses (current_pos - shift) % 26 to handle the alphabetical "wrap-around," ensuring that shifting backward past 'A' correctly lands on 'Z'.
+Key Synchronization: A key_idx increments only for letters, skipping spaces so the key stays aligned with the message. 
 
-Key Cycling: Employs the modulo operator on the key_index to infinitely repeat the key string across a longer message without manual padding.
+1-26 Normalization: Converts characters to their alphabetical position ($A=1, Z=26$) to make the math intuitive.
 
-Space Preservation: Includes a conditional check to pass spaces through the decoder untouched while maintaining the correct key alignment for the next letter.
+Uses if decoded <= 0: + 26 to explicitly force the alphabet to loop from A back to Z.Re-encoding: Maps the calculated positions back to ASCII for the final output.
 
