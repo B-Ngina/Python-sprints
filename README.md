@@ -13,6 +13,7 @@ A dedicated log of my daily technical problem-solving. This repository tracks my
 | 06 | **Alphabetical Max** |	max(key=str.lower) | [View Code](./Python/06_max_letter.py) |
 | 07 | **Sort and Swap** | .sort() & Modulo | [View Code](./Python/07_sort_swap.py) |
 | 08 | **String Math Parser** |	Regex \d+/\D+ & Gap-Parity Math |	[View Code](./Python/08_string_math.py) |
+|09  |**Vigenère Decoder** |	ASCII Mapping & Modular Wrap-around |[View Code](./Python/09_decoder.py) |
 
 #### [01] Palindrome Middle
 **Problem:** Find the true center of a symmetric string.
@@ -95,4 +96,16 @@ Regex Extraction: Uses re.findall to split the string into a list of numbers (\d
 Alignment: Employs gaps.pop(0) to remove leading non-digits, ensuring the first operator correctly corresponds to the space between the first and second numbers.
 
 Cumulative Result: Iterates through the lists using a "look-back" index (i-1) to check the gap length while updating a running total.
+
+#### [09] Vigenère-Style Decoder
+**Problem**: Decode a message using a key derived from historical challenge titles (multiples of 25), applying a backward Caesar shift.
+**Logic**:
+
+Key Generation: Filters a list of titles using enumerate(start=1) and modulo % 25. It extracts the first alphabetical character of each qualifying title to form the encryption key.
+
+Modular Arithmetic: Uses (current_pos - shift) % 26 to handle the alphabetical "wrap-around," ensuring that shifting backward past 'A' correctly lands on 'Z'.
+
+Key Cycling: Employs the modulo operator on the key_index to infinitely repeat the key string across a longer message without manual padding.
+
+Space Preservation: Includes a conditional check to pass spaces through the decoder untouched while maintaining the correct key alignment for the next letter.
 
