@@ -13,7 +13,8 @@ A dedicated log of my daily technical problem-solving. This repository tracks my
 | 06 | **Alphabetical Max** |	max(key=str.lower) | [View Code](./Python/06_max_letter.py) |
 | 07 | **Sort and Swap** | .sort() & Modulo | [View Code](./Python/07_sort_swap.py) |
 | 08 | **String Math Parser** |	Regex \d+/\D+ & Gap-Parity Math |	[View Code](./Python/08_string_math.py) |
-|09  |**Vigenère Decoder** |	ASCII Mapping & Modular Wrap-around |[View Code](./Python/09_decoder.py) |
+| 09 | **Vigenère Decoder** |	ASCII Mapping & Modular Wrap-around | [View Code](./Python/09_decoder.py) |
+| 10 | **Acronym Resolver** |	Tokenization & Pattern Matching | [View Code](./Python/10_acronyms.py) |        
 
 #### [01] Palindrome Middle
 **Problem:** Find the true center of a symmetric string.
@@ -109,4 +110,17 @@ Key Synchronization: A key_idx increments only for letters, skipping spaces so t
 1-26 Normalization: Converts characters to their alphabetical position ($A=1, Z=26$) to make the math intuitive.
 
 Uses if decoded <= 0: + 26 to explicitly force the alphabet to loop from A back to Z.Re-encoding: Maps the calculated positions back to ASCII for the final output.
+
+#### [10] Acronym Resolver
+**Problem**: Match an acronym to its corresponding full organization name from a predefined list.
+
+**Logic**:
+
+String Tokenization: Uses .split() to break full names into individual word lists.
+
+List Comprehension: Generates a temporary acronym by extracting the first character (word[0]) from each token.
+
+Normalization: Applies .upper() to both the generated string and the input to ensure the match is case-insensitive.
+
+Linear Search: Iterates through the list and returns the first name that yields a matching pattern.
 
