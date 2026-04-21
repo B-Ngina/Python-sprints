@@ -14,7 +14,8 @@ A dedicated log of my daily technical problem-solving. This repository tracks my
 | 07 | **Sort and Swap** | .sort() & Modulo | [View Code](./Python/07_sort_swap.py) |
 | 08 | **String Math Parser** |	Regex \d+/\D+ & Gap-Parity Math |	[View Code](./Python/08_string_math.py) |
 | 09 | **Vigenère Decoder** |	ASCII Mapping & Modular Wrap-around | [View Code](./Python/09_decoder.py) |
-| 10 | **Acronym Resolver** |	Tokenization & Pattern Matching | [View Code](./Python/10_acronyms.py) |        
+| 10 | **Acronym Resolver** |	Tokenization & Pattern Matching | [View Code](./Python/10_acronyms.py) |
+| 11 | **Odd Word Filter** | String Length Parity & List Joins | [View Code](./Python/11_odd_words.py) |
 
 #### [01] Palindrome Middle
 **Problem:** Find the true center of a symmetric string.
@@ -123,4 +124,15 @@ List Comprehension: Generates a temporary acronym by extracting the first charac
 Normalization: Applies .upper() to both the generated string and the input to ensure the match is case-insensitive.
 
 Linear Search: Iterates through the list and returns the first name that yields a matching pattern.
+
+#### [11] Odd Word Filter
+**Problem**: Extract only words with an odd character count from a sentence and reassemble them.
+
+**Logic**:
+
+Tokenization: Splits the input string into a list using .split().
+
+Parity Check: Uses len(word) % 2 != 0 to identify odd lengths (where the remainder after dividing by 2 is not zero).
+
+Collection & Assembly: Collects matching strings into a list and uses " ".join() to restore the original sentence spacing format.
 
