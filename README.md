@@ -16,6 +16,7 @@ A dedicated log of my daily technical problem-solving. This repository tracks my
 | 09 | **Vigenère Decoder** |	ASCII Mapping & Modular Wrap-around | [View Code](./Python/09_decoder.py) |
 | 10 | **Acronym Resolver** |	Tokenization & Pattern Matching | [View Code](./Python/10_acronyms.py) |
 | 11 | **Odd Word Filter** | String Length Parity & List Joins | [View Code](./Python/11_odd_words.py) |
+| 12 | **Earth Day Cleanup** | State Tracking & Modular Math | [View Code](./Python/12_cleanup.py) |
 
 #### [01] Palindrome Middle
 **Problem:** Find the true center of a symmetric string.
@@ -135,4 +136,17 @@ Tokenization: Splits the input string into a list using .split().
 Parity Check: Uses len(word) % 2 != 0 to identify odd lengths (where the remainder after dividing by 2 is not zero).
 
 Collection & Assembly: Collects matching strings into a list and uses " ".join() to restore the original sentence spacing format.
+
+##### [12] Earth Day Cleanup Crew
+**Problem**: Calculate a complex score based on base values, consecutive streaks, and recurring item multipliers.
+
+**Logic**:
+
+Type Checking: Uses isinstance() to differentiate between standard item strings and rare item lists.
+
+State Tracking: Maintains streak_item and streak_bonus variables to increment points for consecutive duplicates.
+
+Modular Multipliers: Applies i % 5 == 0 to trigger bonuses every fifth item, using floor division to scale the multiplier ($2\times, 3\times, 4\times$, etc.).
+
+Lookup Efficiency: Utilizes a dictionary for $O(1)$ access to item base values.
 
