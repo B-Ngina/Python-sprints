@@ -17,6 +17,7 @@ A dedicated log of my daily technical problem-solving. This repository tracks my
 | 10 | **Acronym Resolver** |	Tokenization & Pattern Matching | [View Code](./Python/10_acronyms.py) |
 | 11 | **Odd Word Filter** | String Length Parity & List Joins | [View Code](./Python/11_odd_words.py) |
 | 12 | **Earth Day Cleanup** | State Tracking & Modular Math | [View Code](./Python/12_cleanup.py) |
+| 13 | **Time Direction** | Minutes Normalization & Circular Modulo | [View Code](./Python/13_time_dir.py) |
 
 #### [01] Palindrome Middle
 **Problem:** Find the true center of a symmetric string.
@@ -149,4 +150,17 @@ State Tracking: Maintains streak_item and streak_bonus variables to increment po
 Modular Multipliers: Applies i % 5 == 0 to trigger bonuses every fifth item, using floor division to scale the multiplier ($2\times, 3\times, 4\times$, etc.).
 
 Lookup Efficiency: Utilizes a dictionary for $O(1)$ access to item base values.
+
+#### [13] Time Direction Finder
+**Problem**: Determine the shortest path (forward or backward) between two 24-hour timestamps.
+
+**Logic**:
+
+Time Normalization: Converts "HH:MM" strings into a single integer (total minutes from 00:00) using split and map.
+
+Circular Distance Calculation: Employs the modulo operator (% 1440) to calculate distance on a 24-hour loop, automatically accounting for the midnight wrap-around.
+
+Comparison Logic: Compares the forward and backward results to return the optimal direction.
+
+
 
