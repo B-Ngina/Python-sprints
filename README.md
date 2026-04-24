@@ -167,6 +167,7 @@ Comparison Logic: Compares the forward and backward results to return the optima
 **Problem**: Replace repeating words in a string with their first-occurrence index.
 
 **Logic**:
+
 Uses a dictionary to store the first-seen index of each unique word.
 
 Iterates through the word list once, performing an O(1) lookup for each token.
