@@ -18,6 +18,7 @@ A dedicated log of my daily technical problem-solving. This repository tracks my
 | 11 | **Odd Word Filter** | String Length Parity & List Joins | [View Code](./Python/11_odd_words.py) |
 | 12 | **Earth Day Cleanup** | State Tracking & Modular Math | [View Code](./Python/12_cleanup.py) |
 | 13 | **Time Direction** | Minutes Normalization & Circular Modulo | [View Code](./Python/13_time_dir.py) |
+| 14 | **Word Compressor** | Dictionary Mapping & Enumerate | [View Code](./Python/14_compressor.py) |
 
 #### [01] Palindrome Middle
 **Problem:** Find the true center of a symmetric string.
@@ -161,6 +162,16 @@ Time Normalization: Converts "HH:MM" strings into a single integer (total minute
 Circular Distance Calculation: Employs the modulo operator (% 1440) to calculate distance on a 24-hour loop, automatically accounting for the midnight wrap-around.
 
 Comparison Logic: Compares the forward and backward results to return the optimal direction.
+
+#### [14] Word Compressor
+**Problem**: Replace repeating words in a string with their first-occurrence index.
+
+**Logic**:
+Uses a dictionary to store the first-seen index of each unique word.
+
+Iterates through the word list once, performing an O(1) lookup for each token.
+
+Dynamically switches between appending the word (string) or its stored index (converted to string) based on existence in the map.
 
 
 
