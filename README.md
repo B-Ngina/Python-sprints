@@ -19,6 +19,7 @@ A dedicated log of my daily technical problem-solving. This repository tracks my
 | 12 | **Earth Day Cleanup** | State Tracking & Modular Math | [View Code](./Python/12_cleanup.py) |
 | 13 | **Time Direction** | Minutes Normalization & Circular Modulo | [View Code](./Python/13_time_dir.py) |
 | 14 | **Word Compressor** | Dictionary Mapping & Enumerate | [View Code](./Python/14_compressor.py) |
+| 15 | **Word Decompressor** | Digit Checking & List Indexing | [View Code](./Python/15_decompressor.py) |
 
 #### [01] Palindrome Middle
 **Problem:** Find the true center of a symmetric string.
@@ -173,6 +174,17 @@ Uses a dictionary to store the first-seen index of each unique word.
 Iterates through the word list once, performing an O(1) lookup for each token.
 
 Dynamically switches between appending the word (string) or its stored index (converted to string) based on existence in the map.
+
+#### [15] Word Decompressor
+**Problem**: Reverse a compressed string by replacing numeric indices with their original word values.
+
+**Logic**:
+
+Type Discrimination: Uses .isdigit() to branch logic between literal strings and positional references.
+
+Dynamic Indexing: Retrieves previously stored words from the results list using index - 1 to reconcile human-readable positions with Python’s zero-based indexing.
+
+Reconstruction: Sequentially builds a new list of strings and performs a space-delimited join.
 
 
 
