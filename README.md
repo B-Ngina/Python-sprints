@@ -20,6 +20,7 @@ A dedicated log of my daily technical problem-solving. This repository tracks my
 | 13 | **Time Direction** | Minutes Normalization & Circular Modulo | [View Code](./Python/13_time_dir.py) |
 | 14 | **Word Compressor** | Dictionary Mapping & Enumerate | [View Code](./Python/14_compressor.py) |
 | 15 | **Word Decompressor** | Digit Checking & List Indexing | [View Code](./Python/15_decompressor.py) |
+| 16 | **FizzBuzz Explosion** | While Loops & Recursive String Building |  [View Code](./Python/16_fizzbuzz_explode.py) |
 
 #### [01] Palindrome Middle
 **Problem:** Find the true center of a symmetric string.
@@ -185,6 +186,17 @@ Type Discrimination: Uses .isdigit() to branch logic between literal strings and
 Dynamic Indexing: Retrieves previously stored words from the results list using index - 1 to reconcile human-readable positions with Python’s zero-based indexing.
 
 Reconstruction: Sequentially builds a new list of strings and performs a space-delimited join.
+
+#### [16] Recursive FizzBuzz Explosion
+**Problem**: Count the iterations required for a string to reach a specific character density through recursive substitution.
+
+**Logic**:
+
+Conditional Iteration: Employs a while loop to continue processing until the count('z') threshold is met.
+
+Positional Substitution: Uses enumerate(string, 1) to apply FizzBuzz rules to every character based on its current index.
+
+Accumulative Growth: Rebuilds the string each step, leading to exponential length increase, and returns the total step count.
 
 
 
