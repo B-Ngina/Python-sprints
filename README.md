@@ -21,6 +21,8 @@ A dedicated log of my daily technical problem-solving. This repository tracks my
 | 14 | **Word Compressor** | Dictionary Mapping & Enumerate | [View Code](./Python/14_compressor.py) |
 | 15 | **Word Decompressor** | Digit Checking & List Indexing | [View Code](./Python/15_decompressor.py) |
 | 16 | **FizzBuzz Explosion** | While Loops & Recursive String Building |  [View Code](./Python/16_fizzbuzz_explode.py) |
+| 17 | **Parsec Converter** | Parity Detection & Scalar Math | [View Code](./Python/17_parsec.py) |
+
 
 #### [01] Palindrome Middle
 **Problem:** Find the true center of a symmetric string.
@@ -197,6 +199,17 @@ Conditional Iteration: Employs a while loop to continue processing until the cou
 Positional Substitution: Uses enumerate(string, 1) to apply FizzBuzz rules to every character based on its current index.
 
 Accumulative Growth: Rebuilds the string each step, leading to exponential length increase, and returns the total step count.
+
+#### [17] Parsec Converter
+**Problem**: Applies context-specific math based on whether an input integer is even or odd.
+
+**Logic**:
+
+Parity Check: Uses x % 2 != 0 to identify "Time" (Odd) vs "Distance" (Even).
+
+Linear Scaling: Applies a simple multiplier (2* times or 6* times) to the input value.
+
+Return Types: Ensures the final output is an integer to satisfy standard test requirements.
 
 
 
