@@ -22,6 +22,7 @@ A dedicated log of my daily technical problem-solving. This repository tracks my
 | 15 | **Word Decompressor** | Digit Checking & List Indexing | [View Code](./Python/15_decompressor.py) |
 | 16 | **FizzBuzz Explosion** | While Loops & Recursive String Building |  [View Code](./Python/16_fizzbuzz_explode.py) |
 | 17 | **Parsec Converter** | Parity Detection & Scalar Math | [View Code](./Python/17_parsec.py) |
+| 18 | **Narcissistic Numbers** | String Iteration & Power Sums | [View Code](./Python/18_narcissist.py) |
 
 
 #### [01] Palindrome Middle
@@ -210,6 +211,17 @@ Parity Check: Uses x % 2 != 0 to identify "Time" (Odd) vs "Distance" (Even).
 Linear Scaling: Applies a simple multiplier (2* times or 6* times) to the input value.
 
 Return Types: Ensures the final output is an integer to satisfy standard test requirements.
+
+#### [18] Narcissistic Numbers (Armstrong Numbers)
+**Problem**: Verify if a number equals the sum of its own digits each raised to the power of the number of digits.
+
+**Logic**:
+
+Type Casting: Convert int to str to leverage len() for the exponent and to make the digits iterable.
+
+Generator Expression: Efficiently sums the powers in a single line.
+
+Identity Check: Compares the computed sum against the original input.
 
 
 
