@@ -1,6 +1,7 @@
 # Python-sprints
 A dedicated log of my daily technical problem-solving. This repository tracks my journey in mastering Python and SQL through consistent, daily challenges focused on algorithmic logic and data manipulation.
 
+
 # Daily Analytical Logic Logs
 
 | Day | Challenge | Core Concepts | Link |
@@ -23,7 +24,7 @@ A dedicated log of my daily technical problem-solving. This repository tracks my
 | 16 | **FizzBuzz Explosion** | While Loops & Recursive String Building |  [View Code](./Python/16_fizzbuzz_explode.py) |
 | 17 | **Parsec Converter** | Parity Detection & Scalar Math | [View Code](./Python/17_parsec.py) |
 | 18 | **Narcissistic Numbers** | String Iteration & Power Sums | [View Code](./Python/18_narcissist.py) |
-
+| 19 | **Allergen Filter** | Set Membership & Nested Loops |  [View Code](./Python/19_allergen_filter.py) |
 
 #### [01] Palindrome Middle
 **Problem:** Find the true center of a symmetric string.
@@ -223,5 +224,13 @@ Generator Expression: Efficiently sums the powers in a single line.
 
 Identity Check: Compares the computed sum against the original input.
 
+#### [19] Allergen Filter (Safe Meal Finder)
+**Problem**: Extract specific strings from a nested list structure based on a exclusion list.
 
+**Logic**:
 
+Nested Iteration: Iterates through a 2D list (meals) and performs a membership check on the inner lists (allergens).
+
+Membership Optimization: Converts the "avoid" list to a set to achieve O(1) average time complexity for lookups.
+
+Flagging Pattern: Uses a boolean flag (is_safe) to track the state of an item across multiple internal checks.
