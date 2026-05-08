@@ -25,6 +25,7 @@ A dedicated log of my daily technical problem-solving. This repository tracks my
 | 17 | **Parsec Converter** | Parity Detection & Scalar Math | [View Code](./Python/17_parsec.py) |
 | 18 | **Narcissistic Numbers** | String Iteration & Power Sums | [View Code](./Python/18_narcissist.py) |
 | 19 | **Allergen Filter** | Set Membership & Nested Loops |  [View Code](./Python/19_allergen_filter.py) |
+| 20 | **Getting Longest Substring** | Sliding Window & Reverse Search |  [View Code](./Python/20_get_longest_substring.py) |
 
 #### [01] Palindrome Middle
 **Problem:** Find the true center of a symmetric string.
