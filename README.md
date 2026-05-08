@@ -235,3 +235,14 @@ Nested Iteration: Iterates through a 2D list (meals) and performs a membership c
 Membership Optimization: Converts the "avoid" list to a set to achieve O(1) average time complexity for lookups.
 
 Flagging Pattern: Uses a boolean flag (is_safe) to track the state of an item across multiple internal checks.
+
+#### [20] Longest Repeating Substring
+**Problem**: Identify the maximum length substring that occurs at least twice (allowing overlaps).
+
+**Logic**:
+
+Greedy Length Descent: Iterates through possible lengths from len(s) - 1 down to 1 to ensure the first match found is the global maximum.
+
+Sliding Window: Generates all possible substrings for a given length.
+
+Hash Set Memoization: Utilizes a set to track occurrences with $O(1)$ lookup time, ensuring the algorithm remains performant even with overlapping strings.
