@@ -26,6 +26,7 @@ A dedicated log of my daily technical problem-solving. This repository tracks my
 | 18 | **Narcissistic Numbers** | String Iteration & Power Sums | [View Code](./Python/18_narcissist.py) |
 | 19 | **Allergen Filter** | Set Membership & Nested Loops |  [View Code](./Python/19_allergen_filter.py) |
 | 20 | **Getting Longest Substring** | Sliding Window & Reverse Search |  [View Code](./Python/20_get_longest_substring.py) |
+| 21 | **Matrix Transposition** | Coordinate Swapping & 2D Arrays | [View Code](./Python/21_transpose.py) |
 
 #### [01] Palindrome Middle
 **Problem:** Find the true center of a symmetric string.
@@ -246,3 +247,14 @@ Greedy Length Descent: Iterates through possible lengths from len(s) - 1 down to
 Sliding Window: Generates all possible substrings for a given length.
 
 Hash Set Memoization: Utilizes a set to track occurrences with $O(1)$ lookup time, ensuring the algorithm remains performant even with overlapping strings.
+
+#### [21] Matrix Transposition
+**Problem**: Swap the row and column indices of a 2D array.
+
+**Logic**:
+
+Dimension Inversion: Swaps M * N to N * M to ensure the new container fits the reshaped data.
+
+Coordinate Remapping: Iterates through the original structure and reassigns values based on the rule f(i, j)-> (j, i).
+
+Pre-allocation: Initializes the target matrix before population to prevent index errors.
