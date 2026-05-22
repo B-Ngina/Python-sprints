@@ -27,6 +27,7 @@ A dedicated log of my daily technical problem-solving. This repository tracks my
 | 19 | **Allergen Filter** | Set Membership & Nested Loops |  [View Code](./Python/19_allergen_filter.py) |
 | 20 | **Getting Longest Substring** | Sliding Window & Reverse Search |  [View Code](./Python/20_get_longest_substring.py) |
 | 21 | **Matrix Transposition** | Coordinate Swapping & 2D Arrays | [View Code](./Python/21_transpose.py) |
+| 22 | **Meeting Time** | Frequency Mapping & Array Flattening | [View Code](./Python/22_meeting_time_v2.py) |
 
 #### [01] Palindrome Middle
 **Problem:** Find the true center of a symmetric string.
@@ -258,3 +259,14 @@ Dimension Inversion: Swaps M * N to N * M to ensure the new container fits the r
 Coordinate Remapping: Iterates through the original structure and reassigns values based on the rule f(i, j)-> (j, i).
 
 Pre-allocation: Initializes the target matrix before population to prevent index errors.
+
+#### [22] Shared Availability Scheduler (Frequency Array Method)
+**Problem**: Identify the earliest overlapping integer interval across multiple schedules.
+
+**Logic**:
+
+Flattening via Accumulation: Maps a 3D time array down to a 1D frequency array of length 24.
+
+Interval Expansion: Uses range(start, end) to automatically break time blocks into individual 1-hour slots.
+
+Threshold Evaluation: Finds the lowest index where the value equals len(availability).
