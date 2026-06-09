@@ -28,6 +28,7 @@ A dedicated log of my daily technical problem-solving. This repository tracks my
 | 20 | **Getting Longest Substring** | Sliding Window & Reverse Search |  [View Code](./Python/20_get_longest_substring.py) |
 | 21 | **Matrix Transposition** | Coordinate Swapping & 2D Arrays | [View Code](./Python/21_transpose.py) |
 | 22 | **Meeting Time** | Frequency Mapping & Array Flattening | [View Code](./Python/22_meeting_time_v2.py) |
+| 23 | **Roommate Assignments** | Dictionary Queues & Strided Range Slicing | [View Code](./Python/23_room_assignment.py) |
 
 #### [01] Palindrome Middle
 **Problem:** Find the true center of a symmetric string.
@@ -270,3 +271,13 @@ Flattening via Accumulation: Maps a 3D time array down to a 1D frequency array o
 Interval Expansion: Uses range(start, end) to automatically break time blocks into individual 1-hour slots.
 
 Threshold Evaluation: Finds the lowest index where the value equals len(availability).
+
+#### [23] Roommate Assignment Matcher
+**Problem**: Groups elements by an attribute and batches them into chunks of maximum size 2 while preserving historical ordering.
+
+**Logic**:
+Hash-Map Grouping: Categorizes records dynamically into list values using a dictionary.
+
+Strided Iteration: Employs a stride of 2 over segmented arrays to extract pairs or handle single-element remainders cleanly.
+
+String Formatting: Formats list outputs conditional on the block slice length (1 vs 2).
