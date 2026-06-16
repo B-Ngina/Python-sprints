@@ -29,6 +29,7 @@ A dedicated log of my daily technical problem-solving. This repository tracks my
 | 21 | **Matrix Transposition** | Coordinate Swapping & 2D Arrays | [View Code](./Python/21_transpose.py) |
 | 22 | **Meeting Time** | Frequency Mapping & Array Flattening | [View Code](./Python/22_meeting_time_v2.py) |
 | 23 | **Roommate Assignments** | Dictionary Queues & Strided Range Slicing | [View Code](./Python/23_room_assignment.py) |
+| 24 | **Number Sort** | List Comprehension & Timsort |  [View Code](./Python/24_num_sort.py) |
 
 #### [01] Palindrome Middle
 **Problem:** Find the true center of a symmetric string.
@@ -281,3 +282,12 @@ Hash-Map Grouping: Categorizes records dynamically into list values using a dict
 Strided Iteration: Employs a stride of 2 over segmented arrays to extract pairs or handle single-element remainders cleanly.
 
 String Formatting: Formats list outputs conditional on the block slice length (1 vs 2).
+
+#### [24] String Parsing & Numerical Sort
+**Problem**: Parse a comma-separated string of numbers into integers and sort them in ascending order.
+
+**Logic**:
+
+Tokenization & Casting: Uses a list comprehension [int(num) for num in s.split(',')] to split the string stream and cast tokens dynamically.
+
+TimSort Execution: Utilizes Python's built-in sorted() function (which runs on the highly efficient TimSort algorithm) to handle numerical sequencing cleanly.
