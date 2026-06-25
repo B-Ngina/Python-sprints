@@ -30,6 +30,7 @@ A dedicated log of my daily technical problem-solving. This repository tracks my
 | 22 | **Meeting Time** | Frequency Mapping & Array Flattening | [View Code](./Python/22_meeting_time_v2.py) |
 | 23 | **Roommate Assignments** | Dictionary Queues & Strided Range Slicing | [View Code](./Python/23_room_assignment.py) |
 | 24 | **Number Sort** | List Comprehension & Timsort |  [View Code](./Python/24_num_sort.py) |
+| 25 | **Frontmatter Parser** |	String Tokenization & Type Inference | [View Code](./Python/25_frontmatter.py) |
 
 #### [01] Palindrome Middle
 **Problem:** Find the true center of a symmetric string.
@@ -291,3 +292,14 @@ String Formatting: Formats list outputs conditional on the block slice length (1
 Tokenization & Casting: Uses a list comprehension [int(num) for num in s.split(',')] to split the string stream and cast tokens dynamically.
 
 TimSort Execution: Utilizes Python's built-in sorted() function (which runs on the highly efficient TimSort algorithm) to handle numerical sequencing cleanly.
+
+#### [25] Configuration Metadata Parser
+**Problem**: Tokenize a delimited flat-file string layout and typecast key-value pairs into a dictionary.
+
+**Logic**:
+
+Stream Splitting & Filtering: Uses .split('\n') to isolate text records sequentially and employs conditional checks to drop control boundaries (---) and empty lines.
+
+Structural Tokenization: Employs line.split(':', 1) to split string content cleanly at the first colon, protecting titles or values that contain internal colons.
+
+Dynamic Type Inference: Utilizes an EAFP (try/except) block and string matching predicates to dynamically infer and cast substrings to their native primitive types (\text{bool}, \text{int}, \text{float}, or stripped \text{str}).
