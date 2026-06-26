@@ -31,6 +31,7 @@ A dedicated log of my daily technical problem-solving. This repository tracks my
 | 23 | **Roommate Assignments** | Dictionary Queues & Strided Range Slicing | [View Code](./Python/23_room_assignment.py) |
 | 24 | **Number Sort** | List Comprehension & Timsort |  [View Code](./Python/24_num_sort.py) |
 | 25 | **Frontmatter Parser** |	String Tokenization & Type Inference | [View Code](./Python/25_frontmatter.py) |
+| 26 | **Blood Bank Matcher** | Frequency Counters & Greedy Allocation Order | [View Code](./Python/26_blood_bank.py) |
 
 #### [01] Palindrome Middle
 **Problem:** Find the true center of a symmetric string.
@@ -303,3 +304,14 @@ Stream Splitting & Filtering: Uses .split('\n') to isolate text records sequenti
 Structural Tokenization: Employs line.split(':', 1) to split string content cleanly at the first colon, protecting titles or values that contain internal colons.
 
 Dynamic Type Inference: Utilizes an EAFP (try/except) block and string matching predicates to dynamically infer and cast substrings to their native primitive types (\text{bool}, \text{int}, \text{float}, or stripped \text{str}).
+
+#### [26] Blood Bank Resource Optimizer
+**Problem**: Maximize resource distribution across competing consumer groups with strict hierarchy constraints.
+
+**Logic**:
+
+Frequency Hashing: Compiles data streams into value counters using Counter() for O(1) quantity access.
+
+Greedy Prioritization Order: Arranges allocation sequences from most restricted (Type O) to least restricted (Type AB) to maximize total output.
+
+Residual Tracking: Deducts distributed quantities inline to preserve precise leftover pool levels across cascading conditions.
