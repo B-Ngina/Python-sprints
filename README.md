@@ -32,6 +32,7 @@ A dedicated log of my daily technical problem-solving. This repository tracks my
 | 24 | **Number Sort** | List Comprehension & Timsort |  [View Code](./Python/24_num_sort.py) |
 | 25 | **Frontmatter Parser** |	String Tokenization & Type Inference | [View Code](./Python/25_frontmatter.py) |
 | 26 | **Blood Bank Matcher** | Frequency Counters & Greedy Allocation Order | [View Code](./Python/26_blood_bank.py) |
+| 27 | **Nearest Multiple Rounding** | Scalar Normalization & Remapping | [View Code](./Python/27_nearest_multiple.py) |
 
 #### [01] Palindrome Middle
 **Problem:** Find the true center of a symmetric string.
@@ -315,3 +316,14 @@ Frequency Hashing: Compiles data streams into value counters using Counter() for
 Greedy Prioritization Order: Arranges allocation sequences from most restricted (Type O) to least restricted (Type AB) to maximize total output.
 
 Residual Tracking: Deducts distributed quantities inline to preserve precise leftover pool levels across cascading conditions.
+
+#### [27] Custom Interval Rounding
+**Problem**: Align a given integer to its closest mathematical step increment.
+
+**Logic**:
+
+Normalized Scaling: Divides the target value by the factor step interval to isolate the scalar distance.
+
+Primitive Coercion: Applies the native round() function to map the scalar fraction to the nearest absolute integer index.
+
+Vector Rescaling: Multiplies the integer result back by the step factor to restore original structural magnitude.
